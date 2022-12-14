@@ -1,7 +1,6 @@
 @charset "utf-8";
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
 @media screen and (max-width: 520px) {
-
     /*quando for celular, devem ser escondidos esses itens*/
     a#O-Globo, a#Valor, a#Cartola, a#Globoplay, a#Dropz, a#quem, a#receitas, h1#titulo-manchete, section#manchete-principal > h3, div#container-politica, div#economia, div#manchetes-futebol, div#container-tv{
         display: none;
@@ -9,6 +8,9 @@
     /*quando for celular, devem ser exibidos esses itens*/
     section#manchete-simples, section#manchetes-futebol-mobile, section#manchetes-famosos{
         display: block;
+    }
+    html{
+        overflow-x: hidden;
     }
     a{
         text-decoration: none;
