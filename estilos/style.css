@@ -3,7 +3,7 @@
 
 @media screen and (max-width: 1980px) {
 
-    div#mob-manchete, div.noticia-tragedia, section#manchetes-tragedia, section#manchete-simples, section#manchetes-futebol-mobile{
+    div#mob-manchete, div.noticia-tragedia, section#manchetes-tragedia, section#manchete-simples, section#manchetes-futebol-mobile,section#manchetes-famosos{
         display: none;
     }
     body {
@@ -25,7 +25,8 @@
         color: black;
     }
     main {
-        margin: 30px 0px;
+        padding-top: 50px;
+        margin: auto;
         max-width: 1250px;
     }
     #imagem-titulo {
