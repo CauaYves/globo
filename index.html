@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
     <title>Globo</title>
-    <link rel="stylesheet" href="estilos/reset.css" />
-    <link rel="stylesheet" href="estilos/style.css" />
+    <link rel="stylesheet" href="estilos/reset.css"/>
+    <link rel="stylesheet" href="estilos/style.css"/>
+    <link rel="stylesheet" href="estilos/mobilestyle.css">
   </head>
   <body>
     <header>
@@ -14,11 +15,12 @@
       <section id="top">
         <div id="main-title">
           <h1>
-            <img src="imagens/logo.jpeg" alt="Globo" id="imagem-titulo" />
+            <img src="imagens/logo.jpeg" alt="Globo" id="imagem-titulo"/>
           </h1>
         </div>
+        <hr id="linha-topo">
         <nav id="programas">
-          <a href="#" class="link-programa" id="g1">G1</a>
+          <a href="#" class="link-programa" id="g1">g1</a>
           <a href="#" class="link-programa" id="O-Globo">O Globo</a>
           <a href="#" class="link-programa" id="Valor">Valor</a>
           <a href="#" class="link-programa" id="ge">ge</a>
@@ -26,23 +28,111 @@
           <a href="#" class="link-programa" id="Globoplay">Globoplay</a>
           <a href="#" class="link-programa" id="Dropz">Dropz</a>
           <a href="#" class="link-programa" id="Gshow">Gshow</a>
+          <a href="#" class="link-programa" id="tech">tech</a>
+          <a href="#" class="link-programa" id="videos">videos</a>
           <a href="#" class="link-programa" id="quem">quem</a>
           <a href="#" class="link-programa" id="receitas">receitas</a>
         </nav>
+        <hr id="linha-topo">
       </section>
     </header>
     <!--termina o topo da pagina-->
     <main>
       <!--começa o meio da pagina-->
+      <!--manchete para celular-->
+      <div id="mob-manchete">
+        <section id="noticia-principal">
+            <div id="container-titulo">
+              <h1>Ao STF, Ministério da justiça nega produzir dossiê contra cidadão</h1>
+              <h3>Sem aras, autoridades mudam as regras de acordo de leniência</h3>
+            </div>
+        </section>
+      </div>
+      <section id="manchetes-tragedia">
+
+        <hr class="linha-mob">
+        <div class="noticia-tragedia">
+          <img src="imagens/drauzio.jpeg" alt="drauzio varela">
+          <h3>'Um acúmulo de erros levou a essa tragédia'</h3>
+        </div>
+        <p>Junto há 42 anos, casal morre em Brasília</p>
+
+        <hr class="linha-mob">
+        <div class="noticia-tragedia">
+          <img src="imagens/vilela.jpeg" alt="libano">
+          <h3>Líbano detém pelo menos 16 por explosões</h3>
+        </div>
+        <p>Brasileira mostra casa destruida e cita 'sorte'</p>
+
+        <hr class="linha-mob">
+        <div class="noticia-tragedia">
+          <img src="imagens/parto.jpeg" alt="parto">
+          <h3>Líbano: mãe deu à luz em choque e sem anestesia</h3>
+        </div>
+        <p>ferido é achado no mar após 30 horas</p>
+        <hr>
+      </section>
+
+      <section id="manchete-simples">
+
+        <div class="noticia-simples">
+          <h3>Bolsonaro libera R$2 bi para possível vacina</h3>
+          <h6>Usar ozonoterapia pode gerar punição</h6>
+          <hr class="linha-mob">
+        </div>
+
+        <div class="noticia-simples">
+          <h3>justiça proíbe a volta das aulas presenciais no RJ</h3>
+          <h6>Covid: mortes chegam a 97.692 no Brasil</h6>
+          <hr class="linha-mob">
+        </div>
+
+        <div class="noticia-simples">
+          <h3>SP: secretário é preso; R$200 mil são apreendidos</h3>
+          <h6>Doria:'Fatos não têm elo com atual gestão'</h6>
+          <hr class="linha-mob">
+        </div>
+
+      </section>
+
+      <section id="manchetes-futebol-mobile">
+
+        <div class="fut">
+          <img src="imagens/brasileirao.jpeg" alt="brasileirao">
+          <h3>Guia do brasileirão avalia força de cada time; veja o ranking</h3>
+        </div>
+        <p>Tabela: Série A volta no sábado</p>
+
+        <div class="fut">
+          <img src="imagens/cavani.jpeg" alt="cavani">
+          <h3>Cavani avalia futuro e cogita jogar no Brasil</h3>
+        </div>
+        <hr>
+          <div class="fut">
+            <h3>Globo vai a justiça para impedir turner de transmitir jogos de clubes com os quais não tem contato</h3>
+            <p>Cobrado, Fla calcula R$ 52,02 de direitos para cada jogador</p>
+          </div>
+          <hr>
+      </section>
+      <section id="manchetes-famosos">
+        <div class="noticias-famosos">
+          <img src="" alt="">
+          <h3>'Totalmente': Jonatas flagra beijo e dá recado para Arthur</h3>
+        </div>
+        <div id="noticia-famoso-simples">
+          <h3>Tereza manda matar Antenor no hospital</h3>
+          <p>'Fina': Ferdinand desmacarado</p>
+          <p></p>
+        </div>
+        <div class="noticias-famosos">
+          <img src="" alt="">
+          <h3>Filho de Bruno tem hit com 140 milhões de visualizações</h3>
+        </div>
+      </section>
+      <!--manchete para celular-->
       <div id="manchentes">
         <section id="manchete-principal">
-          <h1 id="titulo-manchete">
-            <b>
-              Vacinados entrarão nos EUA sem quarentera a partir de 08 de
-              novembro
-            </b>
-          </h1>
-          <h3>
+          <h1 id="titulo-manchete"><b>Vacinados entrarão nos EUA sem quarentera a partir de 08 denovembro</b></h1>          <h3>
             Ministros 'lavam as mãos' sobre Bolsonaro não se vacinar, relata
             blog
           </h3>

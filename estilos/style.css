@@ -1,172 +1,194 @@
 @charset "utf-8";
 @import url("https://fonts.googleapis.com/css2?family=Encode+Sans:wght@600&display=swap");
-body {
-  font-family: Encode sans;
-  margin: 20px 80px;
-}
-hr {
-  width: 100vw;
-}
-a {
-  text-decoration: none;
-  color: black;
-}
-main {
-  margin: 30px 0px;
-  width: 1250px;
-}
-#imagem-titulo {
-  width: 150px;
-}
-section#top {
-  margin-top: 15px;
-  display: flex;
-  flex-direction: column;
-  height: 80px;
-  width: 90vw;
-}
-nav#programas {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 20px;
-}
-img {
-  width: 200px;
-}
-div#main-title {
-  text-align: center;
-}
-.link-programa {
-  font-family: Encode Sans;
-  text-decoration: none;
-}
-a#g1 {
-  color: #c3170c;
-}
-a#O-Globo {
-  color: #1e4b9b;
-}
-a#Valor {
-  color: #006766;
-}
-a#ge {
-  color: #07aa47;
-}
-a#Cartola {
-  color: #e3662b;
-}
-a#Globoplay {
-  color: #fb0735;
-}
-a#Dropz {
-  color: #ff75bb;
-}
-a#Gshow {
-  color: #ec7d00;
-}
-a#quem {
-  color: #323333;
-}
-a#receitas {
-  color: #a81d83;
-}
-div#manchentes {
-  display: flex;
-}
-section#manchete-principal {
-  width: 48vw;
-  padding-right: 20px;
-  margin-right: 20px;
-  border-right: 1px solid #ebedef;
-}
-section#manchete-secundaria {
-  width: 40vw;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-h1#titulo-manchete {
-  font-family: Encode sans;
-  font-size: 52px;
-  color: #c4160c;
-  margin: 5px 0px 20px 0px;
-}
-div.noticia-futebol {
-  width: 240px;
-  margin-bottom: 40px;
-}
-div.noticia-futebol > p {
-  margin: 10px 0px;
-  color: #16ae54;
-  font-weight: 500;
-}
-div.noticia-futebol > img,
-div.noticia-politica > img {
-  border-radius: 12px;
-}
-div.noticia-futebol > img {
-  width: 240px;
-}
-h3 {
-  font-size: 18px;
-  margin-bottom: 12px;
-}
-div#container-politica {
-  margin: 50px 0px;
-  display: flex;
-  justify-content: space-between;
-}
-div.noticia-politica {
-  width: 200px;
-}
-div.noticia-politica > h4 {
-  color: #c4170c;
-  margin: 10px 0px;
-  font-weight: 500;
-}
-div.noticia-politica > p {
-  font-weight: 400;
-  line-height: 19px;
-  font-size: 14px;
-}
-div#economia {
-  display: flex;
-  justify-content: space-between;
-}
-div.noticia-economia {
-  width: 200px;
-}
-div.noticia-economia > h4 {
-  color: #c4170c;
-  font-size: 14px;
-  margin-bottom: 15px;
-}
-div.noticia-economia > p {
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: 100px;
-  font-size: 14px;
-}
-div.div-tv {
-  width: 240px;
-  margin-bottom: 20px;
-}
-div.div-tv > h4 {
-  color: #ec8006;
-  margin: 8px 0px;
-}
-div.div-tv > h2 {
-  font-size: 20px;
-  line-height: 25px;
-}
-div.div-tv > img {
-  width: 240px;
-  border-radius: 12px;
-}
-div.div-tv > p {
-  font-size: 14px;
-  line-height: 19px;
-}
-div#container-tv {
-  display: flex;
-  flex-direction: column;
+
+@media screen and (max-width: 1980px) {
+
+    div#mob-manchete, div.noticia-tragedia, section#manchetes-tragedia, section#manchete-simples, section#manchetes-futebol-mobile{
+        display: none;
+    }
+    body {
+        font-family: Encode sans;
+        margin: 20px 80px;
+    }
+    hr {
+        display: block;
+        margin-top: 0.5em;
+        margin-bottom: 0.5em;
+        margin-right: auto;
+        border-width: 1px;
+        border-color: rgba(255, 255, 255, 0.164);        
+        width: 100vw;
+        margin-left: -100px;
+    }
+    a {
+        text-decoration: none;
+        color: black;
+    }
+    main {
+        margin: 30px 0px;
+        max-width: 1250px;
+    }
+    #imagem-titulo {
+        width: 150px;
+    }
+    section#top {
+        margin-top: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 80px;
+        width: 90vw;
+    }
+    nav#programas {
+        margin: 10px 0px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    img {
+        width: 200px;
+    }
+    div#main-title {
+        text-align: center;
+    }
+    .link-programa {
+        text-decoration: none;
+    }
+    a#g1 {
+        color: #c3170c;
+    }
+    a#O-Globo {
+        color: #1e4b9b;
+    }
+    a#Valor {
+        color: #006766;
+    }
+    a#ge {
+        color: #07aa47;
+    }
+    a#Cartola {
+        color: #e3662b;
+    }
+    a#Globoplay {
+        color: #fb0735;
+    }
+    a#Dropz {
+        color: #ff75bb;
+    }
+    a#Gshow {
+        color: #ec7d00;
+    }
+    a#tech{
+        color: #666666;
+    }
+    a#videos{
+        color: #0769DE;
+    }
+    a#quem {
+        color: #323333;
+    }
+    a#receitas {
+        color: #a81d83;
+    }
+
+    div#manchentes {
+        display: flex;
+    }
+    section#manchete-principal {
+        width: 48vw;
+        padding-right: 20px;
+        margin-right: 20px;
+        border-right: 1px solid #F5F6F7;
+    }
+    section#manchete-secundaria {
+        width: 40vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    h1#titulo-manchete {
+        font-family: Encode sans;
+        font-size: 52px;
+        color: #c4160c;
+        margin: 5px 0px 20px 0px;
+    }
+    div.noticia-futebol {
+        width: 240px;
+        margin-bottom: 40px;
+    }
+    div.noticia-futebol > p {
+        margin: 10px 0px;
+        color: #16ae54;
+        font-weight: 500;
+    }
+    div.noticia-futebol > img,
+    div.noticia-politica > img {
+        border-radius: 12px;
+    }
+    div.noticia-futebol > img {
+        width: 240px;
+    }
+    h3 {
+        font-size: 18px;
+        margin-bottom: 12px;
+    }
+    div#container-politica {
+        margin: 50px 0px;
+        display: flex;
+        justify-content: space-between;
+    }
+    div.noticia-politica {
+        width: 200px;
+    }
+    div.noticia-politica > h4 {
+        color: #c4170c;
+        margin: 10px 0px;
+        font-weight: 500;
+    }
+    div.noticia-politica > p {
+        font-weight: 400;
+        line-height: 19px;
+        font-size: 14px;
+    }
+    div#economia {
+        display: flex;
+        justify-content: space-between;
+    }
+    div.noticia-economia {
+        width: 200px;
+    }
+    div.noticia-economia > h4 {
+        color: #c4170c;
+        font-size: 14px;
+        margin-bottom: 15px;
+    }
+    div.noticia-economia > p {
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 100px;
+        font-size: 14px;
+    }
+    div.div-tv {
+        width: 240px;
+        margin-bottom: 20px;
+    }
+    div.div-tv > h4 {
+        color: #ec8006;
+        margin: 8px 0px;
+    }
+    div.div-tv > h2 {
+        font-size: 20px;
+        line-height: 25px;
+    }
+    div.div-tv > img {
+        width: 240px;
+        border-radius: 12px;
+    }
+    div.div-tv > p {
+        font-size: 14px;
+        line-height: 19px;
+    }
+    div#container-tv {
+        display: flex;
+        flex-direction: column;
+    }
 }
