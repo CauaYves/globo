@@ -41,7 +41,9 @@
         width: 90vw;
     }
     nav#programas {
-        margin: 10px 0px;
+        padding: 10px;
+        width: 1250px;
+        margin: auto;
         display: flex;
         justify-content: space-between;
         align-items: center;
